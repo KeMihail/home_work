@@ -1,4 +1,4 @@
-package by.ItAcademy.Keiko.Task1;
+package by.itacademy.keikom.task1;
 
 public class HelloWorld {
 	
