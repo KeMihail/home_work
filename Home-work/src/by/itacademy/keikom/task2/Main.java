@@ -7,7 +7,7 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ðº Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ (Ð² Ñ�ÐµÐºÑƒÐ½Ð´Ð°Ñ…): ");
+		System.out.print("Введите промежуток времени (количевство секунд): ");
 		int s = sc.nextInt();
 		
 		int sec = s % 60;
@@ -23,7 +23,8 @@ public class Main {
 		
 		int week = (d - day) / 7;
 		
-		System.out.println(String.format(week + " Ð½ÐµÐ´ÐµÐ»ÑŒ, " + day + " Ñ�ÑƒÑ‚Ð¾Ðº, " + hour + " Ñ‡Ð°Ñ�Ð¾Ð²," + min + " Ð¼Ð¸Ð½ÑƒÑ‚, " + sec + " Ñ�ÐµÐºÑƒÐ½Ð´"));
+		System.out.println(String.format(week + " недель, " + day + " дней, " + hour + " часов,"
+		+ min + " минут, " + sec + " секунд"));
 		
 	}
 
