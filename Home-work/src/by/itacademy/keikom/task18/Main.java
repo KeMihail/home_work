@@ -36,15 +36,9 @@ public class Main {
 	}
 		System.out.println("Количевство пробелов в введеном текте: " + count1);
 		
-		String regez = "\\.|,|\\?|!|:|;|-";
-		int count3 = 0;
-		
-		Pattern pattern = Pattern.compile(regez);
-		Matcher matcher = pattern.matcher(str);
-			while(matcher.find()) {
-				count3++;
-			}
+		int count3 = new CountPunctuation().countsPunctuation(str);
 		
 		System.out.println("Количевство знаков препенания в введеном тексте: " + count3);
 	}
+
 }
